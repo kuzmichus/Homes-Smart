@@ -126,6 +126,25 @@
 
     {
       chart: {
+        title: 'RSSI level',
+        yAxis: {
+          title: {
+             text: 'dBm'
+          },
+        },
+        tooltip: {
+          crosshairs: true,
+          valueSuffix: ' dBm'
+        }
+      },
+      select: {
+        fields: ["rssi"]
+      }
+    },
+
+
+    {
+      chart: {
         title: 'Temperature',
         yAxis: {
           title: {
@@ -147,7 +166,7 @@
         }
       },
       select: {
-        fields: ["amt", "bmpt", "bmet", "dhtt1", "dhtt2", "ds", "dsw1", "dsw2", "dsw3", "dsw4", "dsw5", "dsw6", "dsw7", "dsw8", "dsw9", "dsw10", "dsw11", "dsw12", "dsw13", "dsw14", "dsw15"],
+        fields: ["amt", "bmpt", "bmet", "dhtt1", "dhtt2", "ds", "dsw1", "dsw2", "dsw3", "dsw4", "dsw5", "dsw6", "dsw7", "dsw8", "dsw9", "dsw10", "dsw11", "dsw12", "dsw13", "dsw14", "dsw15", "nrf1t2", "nrf2t2"]
       }
     },
 
@@ -263,7 +282,7 @@
         }
       },
       select: {
-        fields: ["pwm0", "pwm1", "pwm2" ]
+        fields: ["pwm", "pwm0", "pwm1", "pwm2" ]
       }
     },
 
@@ -304,7 +323,7 @@
         }
       },
       select: {
-        fields: ["counter", "countrst"]
+        fields: ["counter", "countrst", "nrf1c1", "nrf2c1"]
       }
     },
 
